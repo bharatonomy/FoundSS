@@ -40,7 +40,7 @@ $ forge snapshot
 ```
 
 ### Anvil
-
+It is a local testnet. Used for testing contracts from frontend or for interacting over RPC. 
 ```shell
 $ anvil
 ```
@@ -64,3 +64,14 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+
+```shell
+$ forge create <ContractName> --interactive
+
+$ Enter the private key:
+```
+```shell
+$ forge create <ContractName> --rpc-url http://0.0.0.0:6969 --private-key <PrivateKey>
+```
+Do not paste private keys on command line like VSCode which might send your logs. It is better to use `--interactive` flag because it doesn't saves the commands to shell history.
